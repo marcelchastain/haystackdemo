@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load highlight %}
+
+{% block content %}
+<form type="get" action=".">
+    <input type="text" name="q"><button type="submit">Search</button>
+</form>
+
+<dl>
+{% for note in page.object_list %}
+<dt>{{ note.title }}</dt>
+<dd>{% highlight note.object.body with query css_class "bg-warning" %}</dd>
+{% endfor %}
+{% endblock %}

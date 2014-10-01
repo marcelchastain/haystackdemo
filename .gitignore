@@ -52,3 +52,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+solr
+solr-4.*
+demo/db.sqlite3
