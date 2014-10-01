@@ -1,0 +1,3 @@
+python-pip
+python-virtualenv
+openjdk-7-jre-headless
